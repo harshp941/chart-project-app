@@ -1,7 +1,7 @@
 import React from 'react';
 import ChartComponent from './chartcomponent';
 
-const BubbleChart = ({ data }) => {
+const Bubblechart = ({ data }) => {
   const chartData = {
     datasets: [
       {
@@ -30,4 +30,4 @@ const BubbleChart = ({ data }) => {
   return <ChartComponent type="bubble" data={chartData} options={options} />;
 };
 
-export default BubbleChart;
+export default Bubblechart;

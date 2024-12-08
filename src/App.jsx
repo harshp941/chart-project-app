@@ -13,3 +13,28 @@ const App = () => {
       .then((data) => setChartData(data))
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
+  
+  if (!chartData) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div>
+      <h1>Financial Dashboard</h1>
+      <div style={{ width: '600px', height: '400px' }}>
+        <BarChart data={chartData} />
+      </div>
+      <div style={{ width: '600px', height: '400px' }}>
+        <LineChart data={chartData} />
+      </div>
+      <div style={{ width: '600px', height: '400px' }}>
+        <ScatterChart data={chartData} />
+      </div>
+      <div style={{ width: '600px', height: '400px' }}>
+        <BubbleChart data={chartData} />
+      </div>
+    </div>
+  );
+};
+
+export default App;

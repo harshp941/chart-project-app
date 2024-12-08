@@ -6,12 +6,12 @@ const Chartcomponent = ({ type, data, options }) => {
   const chartInstance = useRef(null);
 
   useEffect(() => {
-    if (chartInstance.current) {
+    if (chartInstance.current) {        // this is to see if a chart already exists and to destroy it if it does
       chartInstance.current.destroy();
     }
 
     chartInstance.current = new Chart(chartRef.current, {
-      type,
+      type, //  the type of data like line and bar
       data,
       options,
     });
@@ -21,7 +21,7 @@ const Chartcomponent = ({ type, data, options }) => {
     };
   }, [type, data, options]);
 
-  return <canvas ref={chartRef}></canvas>;
+  return <canvas ref={chartRef}></canvas>;  //this is to render
 };
 
 export default Chartcomponent;

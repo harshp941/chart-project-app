@@ -10,12 +10,12 @@ const Bubblechart = ({ data }) => {
           x: expense,
           y: data.profits[index],
           r: data.sales[index] / 1000, // this is too scale the size of the bubbles a bit
-        })),
-        backgroundColor: 'rgba(153, 102, 255, 0.6)',
+        })), 
+        backgroundColor: 'rgba(153, 102, 255, 0.6)', // bubble color
       },
     ],
   };
-
+// more chart options
   const options = {
     scales: {
       x: {

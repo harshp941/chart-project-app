@@ -9,12 +9,12 @@ const Linechart = ({ data }) => {
         label: 'Profits',
         data: data.profits,
         fill: false,
-        borderColor: 'rgba(75, 192, 192, 1)',
+        borderColor: 'rgba(75, 192, 192, 1)', //line color
         tension: 0.1,
       },
     ],
   };
-
+// chart options
   const options = {
     scales: {
       y: {

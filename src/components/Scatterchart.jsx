@@ -1,7 +1,7 @@
 import React from 'react';
 import ChartComponent from './chartcomponent';
 
-const ScatterChart = ({ data }) => {
+const Scatterchart = ({ data }) => {
   const chartData = {
     datasets: [
       {
@@ -10,11 +10,11 @@ const ScatterChart = ({ data }) => {
           x: expense,
           y: data.profits[index],
         })),
-        backgroundColor: 'rgba(255, 99, 132, 0.6)',
+        backgroundColor: 'rgba(255, 99, 132, 0.6)', // scatter color
       },
     ],
   };
-
+// chart options
   const options = {
     scales: {
       x: {
@@ -29,4 +29,4 @@ const ScatterChart = ({ data }) => {
   return <ChartComponent type="scatter" data={chartData} options={options} />;
 };
 
-export default ScatterChart;
+export default Scatterchart;

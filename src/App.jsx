@@ -20,9 +20,13 @@ const App = () => {
   return (
     <div>
       <h1>Financial Charts</h1>
+      <h2>Bar Chart</h2>
       <BarChart data={chartData} />
+      <h2>Line Chart</h2>
       <LineChart data={chartData} />
+      <h2> Scatter Chart</h2>
       <ScatterChart data={chartData} />
+      <h2>Bubble Chart</h2>
       <BubbleChart data={chartData} />
     </div>
   );

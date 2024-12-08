@@ -19,7 +19,7 @@ const App = () => {
   }
   return (
     <div>
-      <h1>Charts</h1>
+      <h1>Financial Charts</h1>
       <BarChart data={chartData} />
       <LineChart data={chartData} />
       <ScatterChart data={chartData} />
@@ -27,23 +27,5 @@ const App = () => {
     </div>
   );
 };
-  //return (
-  //  <div>
-    //  <h1>Financial Dashboard</h1>
-     // <div style={{ width: '600px', height: '400px' }}>
-     //   <BarChart data={chartData} />
-     // </div>
-     // <div style={{ width: '600px', height: '400px' }}>
-     //   <LineChart data={chartData} />
-     // </div>
-     // <div style={{ width: '600px', height: '400px' }}>
-     //   <ScatterChart data={chartData} />
-     // </div>
-     // <div style={{ width: '600px', height: '400px' }}>
-     //   <BubbleChart data={chartData} />
-    //  </div>
-   // </div>
- // );
-//};
-
+  
 export default App;

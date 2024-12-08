@@ -5,7 +5,8 @@ const ChartComponent = ({ type, data, options }) => {
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
 
-  useEffect(() => {
+    useEffect(() => {
+        const ctx = chartRef.current.getContext('2d');
     if (chartInstance.current) {        // this is to see if a chart already exists and to destroy it if it does
       chartInstance.current.destroy();
     }

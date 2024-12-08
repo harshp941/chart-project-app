@@ -8,7 +8,7 @@ const App = () => {
   const [chartData, setChartData] = useState(null);
 
   useEffect(() => {
-    fetch('/financial_data.json') // this is in the public folder
+    fetch('/data.json') // this is in the public folder
       .then((response) => response.json())
       .then((data) => setChartData(data))
       .catch((error) => console.error('Error fetching data:', error));

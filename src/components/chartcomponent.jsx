@@ -11,7 +11,7 @@ const ChartComponent = ({ type, data, options }) => {
       chartInstance.current.destroy();
     }
 
-    chartInstance.current = new Chart(chartRef.current, {
+    chartInstance.current = new Chart(ctx, {
       type, //  the type of data like line and bar
       data,
       options,

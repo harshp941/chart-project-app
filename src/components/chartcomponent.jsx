@@ -17,8 +17,11 @@ const Chartcomponent = ({ type, data, options }) => {
     });
 
     return () => {
+    if (chartInstance.current) {
       chartInstance.current.destroy();
+    }
     };
+
   }, [type, data, options]);
 
   return <canvas ref={chartRef}></canvas>;  //this is to render
